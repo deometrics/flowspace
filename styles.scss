@@ -1,0 +1,164 @@
+$base-colour: #ead2ac;
+$red: #f5928d;
+$blue: #4381a4;
+$lightblue: #9cafb7;
+$orange: #e5b89b;
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin:0;
+    font-family: new-hero, 'Nunito', sans-serif;
+    background-color: $base-colour;
+    color: white;
+    padding: 0 5em 0 5em;
+    animation: 2s ease-in-out forwards in;
+    @keyframes in {
+        0%{
+            opacity: 0;
+        }
+
+        50%{
+            opacity: 0;
+        }
+        
+        100%{
+           opacity: 1;
+        }
+    }
+}
+
+
+section{
+    height: 100vh;
+    padding: 10em;
+}
+
+a{
+    color: whitesmoke;
+}
+
+#pattern{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 3vw;
+    background-image: url(/designassets/pattern.png);
+    background-position: bottom;
+    animation: 60s linear infinite bp;
+}
+
+@keyframes bp {
+    from {
+        background-position:  1800px 0;
+    }
+    
+    to {
+        background-position:  0 1800px;
+    }
+}
+
+#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 25vw;
+    }
+    h1{
+        font-size: 5em;
+        color: white;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    h2{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #scrolldown{
+        animation: 10s ease-out forwards in;
+        color: $lightblue;
+
+    }
+}
+
+#section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h1{
+        font-size: 5em;
+    }
+
+    h3{
+        font-size: 2em;
+        text-align: right;
+    }
+}
+
+#section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20%;
+
+    h1{
+        font-size: 5em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+}
+
+#section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    a{
+        color: $lightblue;
+    }
+    h1{
+        font-size: 5em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+    #floor1{
+        width: 20vw;
+    }
+    #floor2{
+        width: 40vw;
+    }
+}
+
+#section4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:80vh;
+
+    h1{
+        font-size: 5em;
+        
+    }
+
+    h3{
+        font-size: 2em;
+    }
+}
+
+#contact{
+    background-color: $lightblue;
+    border-radius: 20px;
+    width: min-content;
+    height: min-content;
+    padding: 1em;
+    font-weight: 500;
+}

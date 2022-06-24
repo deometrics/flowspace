@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/uss7nxy.css">
+    <link rel="stylesheet" href="locomotivescroll/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>flowspace</title>
+</head>
+<body>
+    <div data-scroll-container id="container">
+        <section data-scroll-section id="home">
+            <img src="designassets/fscolour.png" data-scroll data-scroll-speed="3">
+                <div>
+                    <h1 data-scroll data-scroll-speed="0.5">flowspace.</h1>
+                    <h2 data-scroll data-scroll-speed="1">artist housing.</h2>
+                    <p data-scroll data-scroll-speed="2">626 W Pender St, Vancouver BC</p>
+                </div>
+            <h2 data-scroll data-scroll-speed="8" id="scrolldown">scroll down!</h2>
+        </section>
+        <div data-scroll-section>
+            <div data-scroll id="pattern"></div>
+        </div>
+
+        <section id="section1" data-scroll-section>
+            <h1 data-scroll data-scroll-speed="1">livable studio spaces</h1>
+            <h3 data-scroll data-scroll-speed="3">(a.k.a. your new favourite place)</h3>
+            <img data-scroll data-scroll-speed="10" src="designassets/building.png">
+        </section>
+        <section id="section2" data-scroll-section>
+                <ul data-scroll>
+                    <h1 data-scroll data-scroll-speed="2">some features:</h1>
+                    <li>sound dampened rooms</li>
+                    <li>communal workspaces</li>
+                    <li>in-building float tanks</li>
+                    <li>artist community</li>
+                    <li>downtown location</li>
+                    <li>...and more 😍</li>      
+                </ul>
+                <img data-scroll data-scroll-speed="12" src="designassets/building2.png">
+        </section>
+        <section id="section3" data-scroll-section>
+            <img data-scroll data-scroll-speed="10" src="designassets/floorplan2.png" id="floor1">
+            <h1 data-scroll data-scroll-speed="5">artist-centred rooms</h1>
+            <h3 data-scroll data-scroll-speed="5">download the floor plans <a href="#">here</a></h3>
+            <img data-scroll data-scroll-speed="1" src="designassets/floorplan.png" id="floor2">
+        </section>
+        <section id="section4" data-scroll-section>
+            <h1 data-scroll data-scroll-speed="2">get in touch!</h1>
+            <div id="contact" data-scroll>
+               <div id="contact-row">
+                <h2>+1-708-808-9099</h2>
+                <a href="instagram.com"><h2>@flowspacevancouver</h2></a>
+                <a href="mailto:hello@flowspace.com"><h2>hello@flowspace.com</h2></a>
+               </div>
+            </div>
+        </section>
+        <div data-scroll-section>
+            <div data-scroll data-scroll-speed="0.2" id="pattern"></div>
+        </div>
+    </div>
+
+
+
+    <script src="locomotivescroll/locomotive-scroll.min.js"></script>
+
+    <script>
+        (function () {
+        var scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+        })();
+       
+    </script>
+
+
+</body>
+</html>
